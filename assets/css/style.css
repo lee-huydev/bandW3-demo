@@ -1,0 +1,358 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Lato", sans-serif;
+  scroll-behavior: smooth;
+}
+/* ! Common */
+.font {
+  font-family: "Arima Madurai", cursive;
+}
+.button {
+  font-size: 15px;
+  border: none;
+  font-family: "Lato", sans-serif;
+  background-color: black;
+  color: white;
+  line-height: 22.5px;
+  padding: 8px 16px;
+}
+.rowDad {
+  padding: 64px 16px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.rowChild {
+  padding: 32px 0;
+  margin-left: -8px;
+  margin-right: -8px;
+}
+.col-third {
+  width: 33.3333%;
+  float: left;
+  padding-left: 8px;
+  padding-right: 8px;
+  /* margin-bottom: 8px; */
+}
+.col-half {
+  width: 50%;
+  float: left;
+  padding-left: 8px;
+  padding-right: 8px;
+  display: block;
+}
+.text-align {
+  text-align: center;
+}
+.clear {
+  clear: both;
+}
+/* ! Main */
+/* ! HEADER */
+#header {
+  position: fixed;
+  top: 0;
+  background-color: black;
+  width: 100%;
+  z-index: 1;
+}
+.openHeader-mobile {
+  height: 46px;
+}
+.nav {
+  display: inline-block;
+}
+.nav > li {
+  display: inline-block;
+  position: relative;
+}
+.nav a,
+.nav button {
+  padding: 0 24px;
+  line-height: 46px;
+  display: block;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.navSub {
+  position: absolute;
+  box-shadow: 0 0 1px #fff;
+  background-color: white;
+}
+.navSub li {
+  list-style-type: none;
+  display: none;
+}
+.navSub a {
+  color: #000;
+  text-transform: none;
+  padding-right: 50px;
+  display: block;
+}
+.nav li:hover > a,
+.nav li:hover,
+.nav li:hover > button,
+.navSub li a:hover {
+  background-color: #ccc;
+  color: black;
+  cursor: pointer;
+}
+li:hover .navSub li {
+  display: block;
+}
+.iconSearch,
+.menu-mobile {
+  float: right;
+  display: block;
+  color: white;
+  padding: 15px 24px;
+}
+.menu-mobile {
+  display: none;
+}
+.iconSearch:hover,
+.menu-mobile:hover {
+  background-color: #f44336;
+  color: #000;
+  cursor: pointer;
+}
+/* ! SLIDER */
+
+#slider {
+  padding-top: 66.66666%;
+  margin-top: 46px;
+  background-image: url(/Project_1/assets/img/audience-1853662_960_720.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.sloganText {
+  color: white;
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  transform: translateX(50%);
+  text-align: center;
+  padding: 32px 16px;
+}
+.sloganText p {
+  margin-bottom: 15px;
+  margin-top: 25px;
+  display: block;
+}
+/* ! CONTENT */
+/* Common */
+.session-header {
+  text-align: center;
+}
+.session-header h1 {
+  margin: 10px 0 0;
+}
+.session-header p {
+  margin: 25px 0 15px;
+  font-style: italic;
+  opacity: 0.6;
+}
+.rowDad .textAbout {
+  margin-bottom: 15px;
+  text-align: center;
+}
+.textAbout p {
+  line-height: 1.4;
+  text-align: justify;
+}
+/* Band */
+#band .rowChild .text {
+  margin-top: 15px;
+  font-weight: bold;
+}
+#band .rowChild img {
+  width: 70%;
+}
+/* Tour */
+#tour {
+  background-color: black;
+  color: white;
+}
+.month-list {
+  background-color: white;
+  color: black;
+}
+.month-list li {
+  padding: 8px 16px;
+  color: #757575;
+  list-style-type: none;
+  border-bottom: 1px solid #ccc;
+}
+.month-list li span {
+  padding: 0 8px;
+  margin-left: 16px;
+  background-color: #f44336;
+  color: white;
+  line-height: 22.5px;
+  text-align: center;
+  display: inline-block;
+}
+.month-list .quantity {
+  float: right;
+  background: black;
+  margin-right: 16px;
+  border-radius: 50%;
+}
+.col-third .img-tour {
+  width: 100%;
+  display: block;
+}
+.col-third .img-tour:hover {
+  opacity: 0.6;
+}
+#tour .rowChild .text {
+  padding: 0.01em 16px;
+  background-color: white;
+  color: black;
+  text-align: left;
+  line-height: 1.4;
+}
+.col-third .text b,
+.col-third .text p {
+  margin: 15px 0;
+  display: block;
+}
+.col-third .text .color {
+  opacity: 0.6;
+}
+.col-third > .text > button {
+  display: inline-block;
+  margin-bottom: 16px;
+}
+.col-third > .text > button:hover {
+  color: #000;
+  background-color: #ccc;
+  cursor: pointer;
+}
+/* CONTACT */
+#contact .col-half .text {
+  font-size: 18px;
+  /* margin-bottom: 16px; */
+  display: block;
+  line-height: 1.6;
+}
+#contact .col-contact {
+  margin: 0 -8px 8px;
+}
+#contact .col-half input {
+  width: 100%;
+  padding: 8px;
+  font: inherit;
+  border: 1px solid #ccc;
+}
+#contact .icon-add {
+  color: black;
+  font-weight: bold;
+  margin-right: 10px;
+}
+#contact .col-half button {
+  float: right;
+  margin: 16px 0;
+  outline: blue;
+}
+#contact .col-half button:hover {
+  background-color: #ccc;
+  color: black;
+  cursor: pointer;
+}
+/* MAP */
+#map {
+  padding-top: 66.66666%;
+  background-image: url(/Project_1/assets/img/web-3120321_960_720.png);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(50%);
+}
+/* FOOTER */
+.icon {
+  font-size: 24px;
+  text-align: center;
+  opacity: 0.6;
+}
+#footer p {
+  font-size: 16px;
+  text-align: center;
+  opacity: 0.6;
+  margin: 16px 0 64px;
+}
+.icon :hover {
+  opacity: 0.4;
+  cursor: pointer;
+}
+/* MODAL */
+.modal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+  display: none;
+}
+.modal.modalOpen {
+  display: block;
+}
+.modal .container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 100px;
+}
+.modal .header {
+  background-color: #009688;
+  padding: 32px 16px;
+  text-align: center;
+  color: white;
+}
+.modal .header h1 {
+  margin: 10px 0;
+}
+.modal .container .content,
+.modal .container .footer {
+  padding: 0.01em 16px;
+  background-color: white;
+  display: block;
+}
+.modal .content label {
+  display: block;
+  margin: 15px 0;
+  font-weight: bold;
+}
+.modal .content input {
+  padding: 8px;
+  width: 100%;
+  font: inherit;
+}
+.modal .content button {
+  padding: 16px;
+  margin: 16px 0;
+  width: 100%;
+  background-color: #009688;
+}
+.modal .content button:hover,
+.modal .footer button:hover {
+  background-color: #ccc;
+  color: #000;
+  cursor: pointer;
+}
+.modal .footer button {
+  margin: 16px 0;
+  background-color: #f44336;
+}
+.modal .footer p {
+  float: right;
+  margin: 15px 0;
+}
